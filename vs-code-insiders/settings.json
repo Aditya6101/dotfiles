@@ -1,0 +1,238 @@
+{
+  /*****************************************************
+  Editor Settings
+  ******************************************************/
+  "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "terminal.integrated.fontFamily": "CaskaydiaCove NF, MesloLGM Nerd Font Mono",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "600",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 4,
+  "editor.lineHeight": 22,
+  "editor.matchBrackets": "never",
+  "editor.cursorBlinking": "solid",
+  "editor.selectionHighlight": false,
+  "editor.occurrencesHighlight": false,
+  "editor.guides.indentation": false,
+  "editor.guides.highlightActiveIndentation": false,
+  "editor.tabCompletion": "onlySnippets",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  /*****************************************************
+  Visual Layout & Behavior
+  ******************************************************/
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "window.menuBarVisibility": "compact",
+  "window.zoomLevel": 0,
+  "window.title": "${activeEditorMedium}",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Pro Monokai Darker",
+  "workbench.colorCustomizations": {
+    // "terminal.ansiBrightRed": "#E06C75",
+    // "terminal.ansiBrightBlue": "#528BFF",
+    // "terminal.ansiBrightCyan": "#56B6C2",
+    // "editorCursor.foreground": "#CBD6E8"
+    // "editor.background": "#22262e"
+    // "editor.background": "#1b1d1f",
+    // "sideBar.background": "#202325"
+  },
+  "explorer.openEditors.visible": 0,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.sideBar.location": "left",
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.startupEditor": "none",
+  // "workbench.activityBar.visible": false,
+  "breadcrumbs.enabled": false,
+  "scm.diffDecorations": "none",
+  "diffEditor.renderSideBySide": true,
+  "zenMode.restore": true,
+  "zenMode.fullScreen": false,
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
+  "search.exclude": {
+    "dist": true,
+    "static": true
+  },
+  "git.confirmSync": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.editor.enablePreview": false,
+  "git.autofetch": "all",
+  /*****************************************************
+  Formatting
+  ******************************************************/
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "html.format.enable": false,
+  "css.validate": true,
+  "editor.wordWrap": "on",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.suggestSelection": "first",
+  /*****************************************************
+  Languages & Formatters
+  ******************************************************/
+  /* JavaScript & typescript
+  ----------------------------------------------------*/
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  /* react & react-ts
+  ----------------------------------------------------*/
+  /* Emmet
+  ----------------------------------------------------*/
+  "emmet.triggerExpansionOnTab": true,
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "*.css": "css"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  /* Formatter
+----------------------------------------------------*/
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[handlebars]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  /*****************************************************
+  Settings for third-party extensions
+  ******************************************************/
+  /* Prettier
+  ----------------------------------------------------*/
+  // "prettier.singleQuote": true,
+  // "prettier.jsxSingleQuote": true,
+  // "prettier.tabWidth": 4,
+  /* TailwindCSS & headwind
+  ----------------------------------------------------*/
+  "tailwindCSS.emmetCompletions": true,
+  "headwind.runOnSave": true,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+  /* Vim
+  ----------------------------------------------------*/
+  "vim.foldfix": true,
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.visualstar": true,
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-d>": false,
+    "<C-f>": false,
+    "<C-x>": false
+  },
+  // exit insert mode keybinding
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["u"],
+      "after": [],
+      "commands": [
+        {
+          "command": "undo"
+        }
+      ]
+    },
+    {
+      "before": ["<C-r>"],
+      "after": [],
+      "commands": [
+        {
+          "command": "redo"
+        }
+      ]
+    },
+    // {
+    //   "before": [":"],
+    //   "commands": ["workbench.action.showCommands"],
+    //   "silent": true
+    // },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  /* github-copilot
+  ----------------------------------------------------*/
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": true
+  },
+  /* svelte
+  ----------------------------------------------------*/
+  "svelte.enable-ts-plugin": true,
+  /* liver server
+  ----------------------------------------------------*/
+  "liveServer.settings.donotVerifyTags": true,
+  /* liver sass compliler
+  ----------------------------------------------------*/
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      //  ! This is for React Projects
+      // "savePath": "/src/components/css"
+      //  ! This is for Vanila Projects
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  /*****************************************************
+  Miscellaneous 
+  ******************************************************/
+  "eslint.alwaysShowStatus": true,
+  "svg.preview.mode": "svg",
+  "editor.accessibilitySupport": "off"
+}
