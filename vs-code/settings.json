@@ -2,10 +2,10 @@
   /*****************************************************
   Editor Settings
   ******************************************************/
-  "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
   "editor.fontSize": 14,
-  "terminal.integrated.fontFamily": "CaskaydiaCove NF, MesloLGM Nerd Font Mono",
-  "terminal.integrated.fontSize": 14,
+  "editor.fontFamily": "Menlo, Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "Menlo, MesloLGM Nerd Font Mono",
+  "terminal.integrated.fontSize": 13,
   "terminal.integrated.fontWeight": "600",
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
@@ -14,7 +14,6 @@
   "editor.matchBrackets": "never",
   "editor.cursorBlinking": "solid",
   "editor.selectionHighlight": false,
-  "editor.occurrencesHighlight": false,
   "editor.guides.indentation": false,
   "editor.guides.highlightActiveIndentation": false,
   "editor.tabCompletion": "onlySnippets",
@@ -25,29 +24,33 @@
   Visual Layout & Behavior
   ******************************************************/
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "window.menuBarVisibility": "compact",
   "window.zoomLevel": 0,
   "window.title": "${activeEditorMedium}",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "One Dark Pro Monokai Darker",
+  "workbench.colorTheme": "Atom One Dark",
   "workbench.colorCustomizations": {
-    // "terminal.ansiBrightRed": "#E06C75",
-    // "terminal.ansiBrightBlue": "#528BFF",
-    // "terminal.ansiBrightCyan": "#56B6C2",
-    // "editorCursor.foreground": "#CBD6E8"
-    // "editor.background": "#22262e"
-    // "editor.background": "#1b1d1f",
-    // "sideBar.background": "#202325"
+    // ? Atom One Dark
+    "terminal.ansiBrightRed": "#E06C75",
+    "terminal.ansiBrightBlue": "#528BFF",
+    "terminal.ansiBrightCyan": "#56B6C2",
+    "editorCursor.foreground": "#CBD6E8",
+    "sideBar.background": "#1b1d1fa3",
+    "editor.background": "#1b1d1f"
+    // ? Dracula
+    // "editor.background": "#0e1624",
+    // "sideBar.background": "#0e1624ab",
+    // "panel.background": "#0e1624",
+    // "terminal.background": "#0e1624"
   },
+  "editor.renderLineHighlight": "none",
   "explorer.openEditors.visible": 0,
   "explorer.confirmDragAndDrop": false,
   "workbench.sideBar.location": "left",
-  "workbench.layoutControl.enabled": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.startupEditor": "none",
-  // "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": false,
   "breadcrumbs.enabled": false,
-  "scm.diffDecorations": "none",
+  "scm.diffDecorations": "gutter",
+  "scm.diffDecorationsGutterVisibility": "hover",
   "diffEditor.renderSideBySide": true,
   "zenMode.restore": true,
   "zenMode.fullScreen": false,
@@ -234,5 +237,8 @@
   ******************************************************/
   "eslint.alwaysShowStatus": true,
   "svg.preview.mode": "svg",
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  "workbench.layoutControl.enabled": false,
+  "window.menuBarVisibility": "compact",
+  "editor.occurrencesHighlight": false
 }
