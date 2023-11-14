@@ -1,0 +1,258 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    // wrap with abbreviation
+    "key": "shift+alt+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation"
+  },
+  {
+    // update tag
+    "key": "shift+alt+u",
+    "command": "editor.emmet.action.updateTag"
+  },
+  {
+    // delete tag
+    "key": "shift+alt+d",
+    "command": "editor.emmet.action.removeTag"
+  },
+  {
+    // match tag
+    "key": "shift+m",
+    "command": "editor.emmet.action.matchTag",
+    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+  },
+  {
+    // move line up in insert mode
+    "key": "ctrl+k",
+    "command": "extension.vim_ctrl+f",
+    "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
+  },
+  {
+    // move line up
+    "key": "ctrl+k",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    // move line down
+    "key": "ctrl+j",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    // multiple cursors downwards
+    "key": "alt+j",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    // multiple cursors upwards
+    "key": "alt+k",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    // split editor to right
+    "key": "ctrl+shift+l",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    // split editor to down
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    // split editor to left
+    "key": "ctrl+shift+h",
+    "command": "workbench.action.splitEditorLeft"
+  },
+  {
+    // split editor to up
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.splitEditorUp"
+  },
+  {
+    // open explorer
+    "key": "alt+shift+1",
+    "command": "workbench.view.explorer"
+  },
+  {
+    // open search
+    "key": "alt+shift+2",
+    "command": "workbench.view.search"
+  },
+  {
+    // open source control
+    "key": "alt+shift+3",
+    "command": "workbench.view.scm"
+  },
+  {
+    // open extensions
+    "key": "shift+alt+4",
+    "command": "workbench.view.extensions",
+    "when": "viewContainer.workbench.view.extensions.enabled"
+  },
+  {
+    // create new file
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus && !inputFocus"
+  },
+  {
+    // create new folder
+    "key": "shift+a",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus && !inputFocus"
+  },
+  {
+    // rename file
+    "key": "m",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    // delete file
+    "key": "shift+d",
+    "command": "deleteFile",
+    "when": "explorerViewletFocus && !inputFocus"
+  },
+  {
+    // focus to sidebar
+    "key": "ctrl+0",
+    "command": "workbench.action.focusSideBar"
+  },
+  {
+    // copy line down
+    "key": "shift+alt+j",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    // copy line up
+    "key": "shift+alt+k",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    // collapse explorer
+    "key": "[",
+    "command": "workbench.files.action.collapseExplorerFolders",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    // remove focus from explorer
+    "key": "escape",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "explorerViewletFocus"
+  },
+  {
+    // close current terminal tab
+    "key": "alt+w",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    // focus to next terminal tab
+    "key": "ctrl+]",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    // focus to previous terminal tab
+    "key": "ctrl+[",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    // page up
+    "key": "ctrl+u",
+    "command": "cursorPageUp",
+    "when": "textInputFocus"
+  },
+  {
+    // page down
+    "key": "ctrl+y",
+    "command": "cursorPageDown",
+    "when": "textInputFocus"
+  },
+  {
+    // tab
+    "key": "tab",
+    "command": "tab",
+    "when": "editorTextFocus && !editorTabMovesFocus"
+  },
+  {
+    // outdent
+    "key": "shift+tab",
+    "command": "outdent",
+    "when": "editorTextFocus && !editorTabMovesFocus"
+  },
+  {
+    // close active editor tab
+    "key": "alt+w",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    // reopen closed editor tab
+    "key": "ctrl+w",
+    "command": "workbench.action.reopenClosedEditor"
+  },
+  {
+    // toggle sidebar
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  // toggle zen mode
+  {
+    "key": "ctrl+shift+z",
+    "command": "workbench.action.toggleZenMode"
+  },
+  {
+    "key": "ctrl+k z",
+    "command": "-workbench.action.toggleZenMode"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "selectAllSearchEditorMatches",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "-selectAllSearchEditorMatches",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "editor.action.selectHighlights",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "-editor.action.selectHighlights",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "]",
+    "command": "!workbench.files.action.collapseExplorerFolders",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  // fixes the ctrl + p issue
+  {
+    "key": "ctrl+alt+k",
+    "command": "extension.vim_ctrl+p",
+    "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-extension.vim_ctrl+p",
+    "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  }
+]

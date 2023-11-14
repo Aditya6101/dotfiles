@@ -1,0 +1,264 @@
+{
+  /*****************************************************
+  Visual Layout & Behavior
+  ******************************************************/
+  "window.menuBarVisibility": "toggle",
+  "window.title": "${activeEditorMedium}",
+  "window.zoomLevel": 0,
+  "editor.fontFamily": "Source Code Pro, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.fontWeight": "500",
+  "editor.lineHeight": 22,
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 4,
+  "editor.matchBrackets": "never",
+  // "editor.cursorBlinking": "solid",
+  "editor.selectionHighlight": false,
+  "editor.guides.indentation": false,
+  "editor.guides.highlightActiveIndentation": false,
+  "editor.tabCompletion": "onlySnippets",
+  "editor.renderLineHighlight": "none",
+  "editor.foldingHighlight": false,
+  "editor.accessibilitySupport": "off",
+  "editor.occurrencesHighlight": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "explorer.openEditors.visible": 1,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.colorTheme": "Night Owl",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorCustomizations": {
+    "[Dracula Soft]": {
+      "editor.background": "#0e1624",
+      "sideBar.background": "#0c101c"
+    },
+    "[Atom One Dark]": {
+      "terminal.ansiBrightRed": "#E06C75",
+      "terminal.ansiBrightBlue": "#528BFF",
+      "terminal.ansiBrightCyan": "#56B6C2",
+      "editorCursor.foreground": "#CBD6E8",
+      "sideBar.background": "#1b1d1fa3",
+      "editor.background": "#1b1d1f"
+    },
+    "[Night Owl]": {
+      "activityBar.background": "#000C1D",
+      "activityBar.border": "#102a44",
+      "editorGroup.border": "#102a44",
+      "sideBar.background": "#001122",
+      "sideBar.border": "#102a44",
+      "sideBar.foreground": "#8BADC1"
+    },
+    "[Night Owl (No Italics)]": {
+      "activityBar.background": "#000C1D",
+      "activityBar.border": "#102a44",
+      "editorGroup.border": "#102a44",
+      "sideBar.background": "#001122",
+      "sideBar.border": "#102a44",
+      "sideBar.foreground": "#8BADC1"
+    }
+  },
+  "workbench.sideBar.location": "left",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.startupEditor": "none",
+  "workbench.activityBar.visible": false,
+  "breadcrumbs.enabled": false,
+  "diffEditor.renderSideBySide": true,
+  "scm.diffDecorations": "gutter",
+  "scm.diffDecorationsGutterVisibility": "hover",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontWeight": "600",
+  "terminal.integrated.fontFamily": "Source Code Pro, Consolas, MesloLGL Nerd Font Mono",
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "git.confirmSync": false,
+  "git.autofetch": "all",
+  "zenMode.restore": true,
+  "zenMode.fullScreen": false,
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
+  "search.exclude": {
+    "dist": true,
+    "static": true
+  },
+  /*****************************************************
+  Vim Configurations
+  ******************************************************/
+  "vim.foldfix": true,
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.visualstar": true,
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-d>": false,
+    "<C-f>": false,
+    "<C-x>": false
+  },
+  // exit insert mode keybinding
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["u"],
+      "after": [],
+      "commands": [
+        {
+          "command": "undo"
+        }
+      ]
+    },
+    {
+      "before": ["<C-r>"],
+      "after": [],
+      "commands": [
+        {
+          "command": "redo"
+        }
+      ]
+    },
+    // {
+    //   "before": [":"],
+    //   "commands": ["workbench.action.showCommands"],
+    //   "silent": true
+    // },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+
+  /*****************************************************
+  Formatting
+  ******************************************************/
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "html.format.enable": false,
+  "css.validate": true,
+  "editor.wordWrap": "on",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.suggestSelection": "first",
+  /*****************************************************
+  Languages & Formatters
+  ******************************************************/
+  /* JavaScript & typescript
+  ----------------------------------------------------*/
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  /* react & react-ts
+  ----------------------------------------------------*/
+  /* Emmet
+  ----------------------------------------------------*/
+  "emmet.triggerExpansionOnTab": true,
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "*.css": "css"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  /* Formatter
+----------------------------------------------------*/
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[handlebars]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  /*****************************************************
+  Settings for third-party extensions
+  ******************************************************/
+  /* Prettier
+  ----------------------------------------------------*/
+  // "prettier.singleQuote": true,
+  // "prettier.jsxSingleQuote": true,
+  // "prettier.tabWidth": 4,
+  /* TailwindCSS & headwind
+  ----------------------------------------------------*/
+  "tailwindCSS.emmetCompletions": true,
+  "headwind.runOnSave": true,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+  /* github-copilot
+  ----------------------------------------------------*/
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": true
+  },
+  /* svelte
+  ----------------------------------------------------*/
+  "svelte.enable-ts-plugin": true,
+  /* liver server
+  ----------------------------------------------------*/
+  "liveServer.settings.donotVerifyTags": true,
+  /* liver sass compliler
+  ----------------------------------------------------*/
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      //  ! This is for React Projects
+      // "savePath": "/src/components/css"
+      //  ! This is for Vanila Projects
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  /*****************************************************
+  Miscellaneous 
+  ******************************************************/
+  "eslint.alwaysShowStatus": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "svg.preview.mode": "svg",
+  "window.commandCenter": true
+}
