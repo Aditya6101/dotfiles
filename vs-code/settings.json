@@ -3,11 +3,12 @@
   Visual Layout & Behavior
   ******************************************************/
   "window.menuBarVisibility": "compact",
+  "window.commandCenter": false,
   "window.title": "${activeEditorMedium}",
   "window.zoomLevel": 0,
-  "editor.fontFamily": "Menlo, 'Courier New', monospace",
-  "editor.fontSize": 14,
-  "editor.lineHeight": 22,
+  "editor.fontFamily": "Source Code Pro, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 24,
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "editor.tabSize": 4,
@@ -20,24 +21,35 @@
   "editor.renderLineHighlight": "none",
   "editor.foldingHighlight": false,
   "editor.accessibilitySupport": "off",
-  "editor.occurrencesHighlight": false,
+  "editor.occurrencesHighlight": "off",
   "editor.quickSuggestions": {
     "strings": true
   },
   "explorer.openEditors.visible": 1,
   "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+  "workbench.activityBar.location": "hidden",
   "workbench.editor.enablePreview": false,
   "workbench.layoutControl.enabled": false,
-  "workbench.colorTheme": "Dracula Soft",
-  "workbench.iconTheme": "vs-seti",
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
-    "[Dracula Soft]": {
-      "editor.background": "#0e1624",
-      "sideBar.background": "#0c101c"
-      // "editor.background": "#101729"
-      // ---
-      // "editor.background": "#0e172a"
-      // "sideBar.background": "#0e1624"
+    "[Dracula]": {
+      "editor.background": "#0f172a",
+      "menu.background": "#0f172a",
+      "sideBar.background": "#0b111e",
+      "banner.background": "#0f172a",
+      "tab.inactiveBackground": "#0b111e",
+      "tab.activeBackground": "#0f172a",
+      "titleBar.activeBackground": "#0b111e",
+      "editor.lineHighlightBorder": "#ff000000",
+      "terminal.ansiBrightRed": "#E06C75",
+      "terminal.ansiBrightBlue": "#528BFF",
+      "terminal.ansiBrightCyan": "#56B6C2",
+      "editorCursor.foreground": "#CBD6E8"
+
+      // "editor.background": "#0e1624",
+      // "sideBar.background": "#0c101c"
     },
     "[Atom One Dark]": {
       "terminal.ansiBrightRed": "#E06C75",
@@ -46,22 +58,6 @@
       "editorCursor.foreground": "#CBD6E8",
       "sideBar.background": "#1b1d1fa3",
       "editor.background": "#1b1d1f"
-    },
-    "[Night Owl]": {
-      "activityBar.background": "#000C1D",
-      "activityBar.border": "#102a44",
-      "editorGroup.border": "#102a44",
-      "sideBar.background": "#001122",
-      "sideBar.border": "#102a44",
-      "sideBar.foreground": "#8BADC1"
-    },
-    "[Night Owl (No Italics)]": {
-      "activityBar.background": "#000C1D",
-      "activityBar.border": "#102a44",
-      "editorGroup.border": "#102a44",
-      "sideBar.background": "#001122",
-      "sideBar.border": "#102a44",
-      "sideBar.foreground": "#8BADC1"
     }
   },
   "workbench.sideBar.location": "left",
@@ -71,17 +67,19 @@
   "diffEditor.renderSideBySide": true,
   "scm.diffDecorations": "gutter",
   "scm.diffDecorationsGutterVisibility": "hover",
+  "terminal.integrated.fontFamily": "Source Code Pro, MesloLGL Nerd Font Mono",
   "terminal.integrated.fontSize": 13,
-  "terminal.integrated.fontFamily": "Menlo, MesloLGL Nerd Font Mono",
-  // "terminal.integrated.fontWeight": "600",
+  "terminal.integrated.fontWeight": "600",
   "terminal.integrated.lineHeight": 1.2,
   "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.linux": "zsh",
   "git.confirmSync": false,
   "git.autofetch": "all",
   "zenMode.restore": true,
   "zenMode.fullScreen": false,
   "zenMode.centerLayout": false,
   "zenMode.hideLineNumbers": false,
+  "zenMode.showTabs": "single",
   "search.exclude": {
     "dist": true,
     "static": true
@@ -101,37 +99,12 @@
     "<C-f>": false,
     "<C-x>": false
   },
-  // exit insert mode keybinding
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "k"],
-      "after": ["<esc>"]
-    }
-  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["u"],
-      "after": [],
-      "commands": [
-        {
-          "command": "undo"
-        }
-      ]
+      "before": [";"],
+      "commands": ["workbench.action.showCommands"],
+      "silent": true
     },
-    {
-      "before": ["<C-r>"],
-      "after": [],
-      "commands": [
-        {
-          "command": "redo"
-        }
-      ]
-    },
-    // {
-    //   "before": [":"],
-    //   "commands": ["workbench.action.showCommands"],
-    //   "silent": true
-    // },
     {
       "before": [">"],
       "commands": ["editor.action.indentLines"]
@@ -141,7 +114,6 @@
       "commands": ["editor.action.outdentLines"]
     }
   ],
-
   /*****************************************************
   Formatting
   ******************************************************/
@@ -193,11 +165,17 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -262,9 +240,5 @@
   "eslint.alwaysShowStatus": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "svg.preview.mode": "svg",
-  "[astro]": {
-    "editor.defaultFormatter": "astro-build.astro-vscode"
-  },
-  "cSpell.enabled": true,
-  "workbench.activityBar.location": "hidden"
+  "cSpell.enabled": true
 }
